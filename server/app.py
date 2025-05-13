@@ -3,8 +3,8 @@ from flask import Flask, request, render_template_string, redirect
 app = Flask(__name__)
 
 # Credenciales válidas (para prueba)
-VALID_USERNAME = 'admin'
-VALID_PASSWORD = 'password123'
+VALID_USERNAME = 'maugzgz'
+VALID_PASSWORD = 'Mau18188'
 
 HTML = """
 <!doctype html>
