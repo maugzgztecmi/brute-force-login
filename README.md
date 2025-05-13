@@ -1,28 +1,24 @@
-# Herramienta de Fuerza Bruta para Formularios de Login
+# Brute Force Login Tool (Para pruebas locales)
 
-⚠️ Esta herramienta es únicamente para **fines educativos** y debe ser usada en **entornos de prueba controlados**.
+Este proyecto es una herramienta de **fuerza bruta** diseñada para realizar pruebas de seguridad en un formulario de login simulado. El proyecto consiste en un servidor Flask que expone un formulario de inicio de sesión, y un script que intenta encontrar la contraseña correcta utilizando un diccionario de contraseñas.
 
-## Estructura
+> **⚠️ Advertencia:** Esta herramienta debe usarse exclusivamente en entornos controlados y con fines educativos o de prueba ética. No está diseñada para ser usada en sistemas reales sin el consentimiento explícito del propietario.
 
-- `server/`: Contiene un servidor Flask con un formulario vulnerable a fuerza bruta.
-- `attacker/`: Contiene el script que realiza el ataque automatizado.
+## 💻 Estructura del Proyecto
 
-## Uso
+El proyecto está dividido en dos partes:
 
-1. Inicia el servidor:
+1. **Servidor Flask (`server/`)**
+   - Un servidor web simple con un formulario de login simulado.
+   
+2. **Herramienta de Fuerza Bruta (`attacker/`)**
+   - Un script que intenta descubrir la contraseña correcta a través de un ataque de fuerza bruta utilizando una lista de contraseñas.
+
+## 🛠 Requisitos
+
+### 1. **Instalar Python**
+   Asegúrate de tener Python 3.x instalado en tu sistema. Puedes verificarlo con:
+
    ```bash
-   cd server
-   python app.py
-   ```
+   python --version
 
-2. Ejecuta el atacante desde otra terminal:
-   ```bash
-   cd attacker
-   python brute_force.py
-   ```
-
-## Requisitos
-
-- Python 3.x
-- Flask (`pip install flask`)
-- requests (`pip install requests`)
